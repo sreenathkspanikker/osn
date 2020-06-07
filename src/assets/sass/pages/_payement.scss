@@ -1,0 +1,7 @@
+.app-payement {
+  padding: 2rem 0;
+  .app-title {
+    @include font-family($font-main, 1.875em, $title-color, normal, 1);
+    margin-bottom: 2rem;
+  }
+}

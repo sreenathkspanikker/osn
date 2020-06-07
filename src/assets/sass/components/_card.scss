@@ -1,0 +1,15 @@
+.card {
+  border: 0;
+  border-radius: 0;
+  .card-body {
+    padding: 1rem 0;
+    .card-title {
+      @include font-family($font-main, 1.2em, $title-color, normal, 1.3em);
+      span {
+        display: block;
+        font-size: 0.8em;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

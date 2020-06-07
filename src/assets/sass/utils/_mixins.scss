@@ -1,0 +1,132 @@
+// FONT FAMILY
+@mixin font-family($font, $size, $color, $font-weight, $line-height) {
+  font-family: $font;
+  font-size: $size;
+  color: $color;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+// CENTER ELEMENT
+@mixin centerElement {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+}
+
+// FLEX
+@mixin flex($display, $align-items, $justify-content) {
+  display: $display;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+// ANIMATED
+@mixin animation($time, $delay, $name) {
+  -webkit-animation-duration: $time;
+  animation-duration: $time;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: $delay;
+  animation-delay: $delay;
+  -webkit-animation-name: $name;
+  animation-name: $name;
+}
+
+// POSTION
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position !important;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// POSTION
+@mixin backgroundImage(
+  $background-image,
+  $background-repeat,
+  $background-size,
+  $background-position
+) {
+  background-image: url($background-image);
+  background-repeat: $background-repeat;
+  background-size: $background-size;
+  background-position: $background-position;
+}
+
+// HOVER & ACTIVE
+@mixin hover-active {
+  &:hover {
+    @content;
+  }
+  &:active {
+    @content;
+  }
+}
+
+// TEXT OVERFLOW
+@mixin elipses {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// PSUDEO CIRCLE
+@mixin psudeCircle(
+  $width,
+  $height,
+  $background-color,
+  $top,
+  $right,
+  $bottom,
+  $left,
+  $z-index
+) {
+  &::before {
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    border-radius: 100%;
+    width: $width;
+    height: $height;
+    background-color: $background-color;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $z-index;
+  }
+}
+
+// OUTLINE CIRCLE
+@mixin circleOutline(
+  $width,
+  $height,
+  $border-width,
+  $border-color,
+  $top,
+  $right,
+  $bottom,
+  $left,
+  $z-index
+) {
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    width: $width;
+    height: $height;
+    border-style: solid;
+    border-width: $border-width;
+    border-color: $border-color;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $z-index;
+  }
+}

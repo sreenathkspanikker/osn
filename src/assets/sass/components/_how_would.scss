@@ -1,0 +1,21 @@
+.how-would {
+  .nav-link {
+    background-color: white;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.07);
+    margin-bottom: 2rem;
+    &.active {
+      border: 1px solid $primary-color;
+      &:before {
+        content: "\61";
+        font-family: "interview" !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        @include position(absolute, -5px, 8px, auto, auto);
+        font-size: 2em;
+        color: $primary-color;
+      }
+    }
+  }
+}

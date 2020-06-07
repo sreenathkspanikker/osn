@@ -1,0 +1,13 @@
+.page-loader {
+  width: 100%;
+  height: 100vh;
+  @include position(fixed, 0, auto, auto, 0);
+  @include flex(flex, center, center);
+  z-index: 999;
+  background-color: white;
+  @include media-breakpoint-down(sm) {
+    > div {
+      width: 150px !important;
+    }
+  }
+}

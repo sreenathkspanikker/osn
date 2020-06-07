@@ -1,0 +1,42 @@
+.proceed {
+  background-color: #f6f6f6;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  h2 {
+    @include font-family($font-main, 2em, $title-color, bold, 1);
+    margin-bottom: 2rem;
+    text-align: center;
+    @include media-breakpoint-down(lg) {
+      font-size: 1.5em;
+    }
+  }
+  .list-data {
+    .list-group {
+      .list-group-item {
+        @include font-family($font-main, 1.593125em, $title-color, 300, 1);
+        background-color: transparent;
+        border: 0;
+        flex: 1 1 auto;
+        padding: 1rem 0;
+        @include media-breakpoint-down(lg) {
+          font-size: 1.2em;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 1em;
+        }
+        span {
+          color: $primary-color;
+        }
+        strong {
+          font-weight: bold;
+        }
+        small {
+          font-size: 0.7em;
+        }
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
