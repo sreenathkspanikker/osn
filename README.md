@@ -14,6 +14,22 @@ In the project directory, you can run:
 2. Use provided data.json from assets folder to load available:
 3. Render and calculate values based on the selected payment method and frequency
 
+## Extra features
+
+1. Perfect pixel
+2. Responsive for all devices
+3. PAyment successfull popup with 5 second timout.
+
+## Main Page
+
+`/pages/Payement.js`
+
+## Components
+
+`/components/HowOften.js`
+`/components/HowWould.js`
+`/components/Proceed.js`
+
 ## Tecnologies
 
 **Languages**
@@ -21,6 +37,9 @@ In the project directory, you can run:
 
 **Frameworks / CSS utilities**
 `React-Bootstrap, Antd, Webpack`
+
+**Router**
+`Reach@router`
 
 **Editor**
 `VisualStudio`

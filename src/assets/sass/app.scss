@@ -14,8 +14,9 @@
 @import "./core/normalize";
 
 // COMPONENTS
-@import "./components/button", "./components/card", "./components/loader",
-  "./components/how_would", "./components/how_often", "./components/proceed";
+@import "./components/layout", "./components/button", "./components/card",
+  "./components/loader", "./components/how_would", "./components/how_often",
+  "./components/proceed";
 
 // PAGES
 @import "./pages/payement";

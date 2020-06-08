@@ -2,45 +2,82 @@
   h3 {
     @include font-family($font-main, 1.875em, $title-color, normal, 1);
     margin-bottom: 1rem;
+    @include media-breakpoint-down(md) {
+      font-size: 1.3em;
+    }
   }
 
   // TAB
   .nav {
-    @include flex(flex, normal, normal);
     box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.07);
     border-radius: 50px;
     overflow: hidden;
-    .nav-link {
+    @include media-breakpoint-down(xs) {
+      border-radius: 0;
+    }
+    .nav-item {
       flex: 1 1 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      padding: 1rem 2rem;
-      border-radius: 50px;
-      border: 0 !important;
-      @include font-family($font-main, 1em, rgba($title-color, 0.8), normal, 1);
-      .badge {
-        @include font-family($font-main, 0.8em, white, normal, 1);
-        background-color: $primary-color;
-        border-radius: 0;
-        margin-top: 0.2rem;
-        width: fit-content;
+      @include media-breakpoint-down(xs) {
+        width: 50%;
+      }
+      .nav-link {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        border: 0 !important;
+        @include font-family(
+          $font-main,
+          1em,
+          rgba($title-color, 0.8),
+          normal,
+          1
+        );
+        @include media-breakpoint-down(md) {
+          padding: 1rem 0.8rem;
+        }
+        @include media-breakpoint-down(xs) {
+          border-radius: 0;
+        }
+        .badge {
+          @include font-family($font-main, 0.8em, white, normal, 1);
+          background-color: $primary-color;
+          border-radius: 0;
+          margin-top: 0.2rem;
+          width: fit-content;
+        }
       }
       &.active {
-        background-color: #393939;
-        color: white;
+        .nav-link {
+          background-color: #393939;
+          color: white;
+        }
       }
     }
   }
   .content {
-    margin-top: 1rem;
+    padding-top: 1rem;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 1rem;
+    }
+    @include media-breakpoint-down(xs) {
+      border: 1px solid #e6e6e6;
+      padding: 1rem;
+    }
     h2 {
       @include font-family($font-main, 1.7em, $title-color, normal, 1);
       small {
         font-size: 0.5em;
         padding: 0 0.5rem;
+      }
+    }
+    .text-right {
+      @include media-breakpoint-down(xs) {
+        text-align: left !important;
       }
     }
   }

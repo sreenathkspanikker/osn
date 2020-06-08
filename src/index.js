@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { Router } from "@reach/router";
 import Payement from "./pages/Payement";
 import * as serviceWorker from "./serviceWorker";
-
+import "../node_modules/antd/dist/antd.css";
 import "./assets/sass/app.scss";
 
 ReactDOM.render(
