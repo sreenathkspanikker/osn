@@ -85,6 +85,47 @@
       ]
     },
     {
+      "method": "paypal",
+      "invoicePeriod": [
+        {
+          "frequency": "1",
+          "price": {
+            "pack": "14",
+            "discountPerc": "0",
+            "hardware": "0",
+            "installation": "0"
+          }
+        },
+        {
+          "frequency": "3",
+          "price": {
+            "pack": "14",
+            "discountPerc": "0",
+            "hardware": "0",
+            "installation": "0"
+          }
+        },
+        {
+          "frequency": "6",
+          "price": {
+            "pack": "12",
+            "discountPerc": "14",
+            "hardware": "0",
+            "installation": "0"
+          }
+        },
+        {
+          "frequency": "12",
+          "price": {
+            "pack": "10",
+            "discountPerc": "29",
+            "hardware": "0",
+            "installation": "0"
+          }
+        }
+      ]
+    },
+    {
       "method": "amex",
       "invoicePeriod": [
         {
@@ -151,47 +192,6 @@
           "price": {
             "pack": "13",
             "discountPerc": "7",
-            "hardware": "0",
-            "installation": "0"
-          }
-        },
-        {
-          "frequency": "12",
-          "price": {
-            "pack": "10",
-            "discountPerc": "29",
-            "hardware": "0",
-            "installation": "0"
-          }
-        }
-      ]
-    },
-    {
-      "method": "paypal",
-      "invoicePeriod": [
-        {
-          "frequency": "1",
-          "price": {
-            "pack": "14",
-            "discountPerc": "0",
-            "hardware": "0",
-            "installation": "0"
-          }
-        },
-        {
-          "frequency": "3",
-          "price": {
-            "pack": "14",
-            "discountPerc": "0",
-            "hardware": "0",
-            "installation": "0"
-          }
-        },
-        {
-          "frequency": "6",
-          "price": {
-            "pack": "12",
-            "discountPerc": "14",
             "hardware": "0",
             "installation": "0"
           }

@@ -46,15 +46,15 @@ const data = [
     image: Logo2,
   },
   {
-    name: "amex",
+    name: "paypal",
     image: Logo3,
   },
   {
-    name: "mada",
+    name: "amex",
     image: Logo4,
   },
   {
-    name: "paypal",
+    name: "mada",
     image: Logo5,
   },
 ];

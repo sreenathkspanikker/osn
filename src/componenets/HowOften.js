@@ -45,6 +45,14 @@ const HowOften = (props) => {
   return (
     <div className="how-often">
       <h3>How often would you like to pay?</h3>
+      {props.data[0].method === "mada" && (
+        <p className="mb-4">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500.
+        </p>
+      )}
+
       {/* NAV TAB TITLE */}
       <Nav>
         {props.data[0].invoicePeriod.map((item, index) => (
@@ -84,7 +92,9 @@ const HowOften = (props) => {
                     {tabValue.price !== undefined ? tabValue.price.pack : 14}
                   </strong>
                 </h2>
-                <p>Pay longer, save more *</p>
+                <p>
+                  Pay longer, save more <i className="icon-star" />
+                </p>
               </React.Fragment>
             ) : (
               <h2>
