@@ -18,7 +18,7 @@ In the project directory, you can run:
 
 1. Perfect pixel
 2. Responsive for all devices
-3. PAyment successfull popup with 5 second timout.
+3. Payment successful popup with 5 second timeout.
 
 ## Main Page
 
